@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>New project</title>
+    <meta name="description" content="Создание адаптивного сайта"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="icon" href="img/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <meta name="theme-color" content="#000"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="main-container">
+          <header class="header">
+            <div class="container">
+              <div class="header__content"><a class="header__logo" href="index.html"><img class="header__logo-img" src="../img/Logo.png" alt="logo"/></a>
+                <div class="header-menu"><a class="toggle-mnu" href="#mobile-menu"><span></span><i></i></a>
+                  <ul class="header-menu__items sf-menu">
+                    <li class="header-menu__item"><a class="header-menu__item-link" href="#">О нас</a></li>
+                    <li class="header-menu__item"><a class="header-menu__item-link" href="#">Услуги<i class="material-icons expand-more-icon">&#xe5cf;</i></a>
+                      <ul class="services__menu-items">
+                        <li class="services__menu-item"><a class="services__menu-item-link" href="#">Услуга1</a></li>
+                        <li class="services__menu-item"><a class="services__menu-item-link" href="#">Услуга2<i class="material-icons expand-more-icon">&#xe5cf;</i></a>
+                          <ul class="service2__menu-items">
+                            <li class="service2__menu-item"><a class="services__menu-item-link" href="#">Подслуга2</a></li>
+                            <li class="service2__menu-item"><a class="services__menu-item-link" href="#">Подслуга2</a></li>
+                          </ul>
+                        </li>
+                        <li class="services__menu-item"><a class="services__menu-item-link" href="#">Услуга с очень длинным названием</a></li>
+                      </ul>
+                    </li>
+                    <li class="header-menu__item"><a class="header-menu__item-link" href="#">Вакансии</a></li>
+                    <li class="header-menu__item"><a class="header-menu__item-link" href="#">Новости</a></li>
+                    <li class="header-menu__item"><a class="header-menu__item-link" href="#">Соглашения<i class="material-icons expand-more-icon">&#xe5cf;</i></a>
+                      <ul class="agreements__menu-items">
+                        <li class="agreements__menu-item"><a class="agreements__menu-item-link" href="#">Соглашение1</a></li>
+                        <li class="agreements__menu-item"><a class="agreements__menu-item-link" href="#">Соглашение2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><a class="button  transparent-button" href="sign_in.html"><span> Войти </span> </a><a class="button  purpule-button" href="registration.html">Зарегистрироваться </a>
+              </div>
+            </div>
+          </header>
+      <div class="sign-in-section">
+        <div class="container">
+          <div class="sign-in-section__content">
+            <form class="sign-in-form" id="sign-in">
+              <h1>Войти</h1>
+                          <label class="input-text">
+                            <input class="input-field" type="text" name="email" placeholder="Email" id="email-id"/>
+                          </label>
+                          <label class="input-text">
+                            <input class="input-field" type="text" name="password" placeholder="Пароль" id="password-id"/>
+                          </label>
+                          <button class="button  purpule-button long-button" type="submit">Войти <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                          </button>
+                          <div class="account-existance"><span class="account-existance_text">Нет аккаунта на Toxin?</span><a class="button  transparent-button" href="registration.html"><span> Создать </span> </a>
+                          </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="company-info">
+              <div class="company-info__logo"><img class="company-info__logo-img" src="../img/Logo.png" alt="logo"/></div>
+              <p class="company-info__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <div class="navigation">
+              <h3>Навигация</h3>
+              <ul class="navigation-items">
+                <li class="navigation-item"><a class="navigation-item-link" href="#">О нас</a></li>
+                <li class="navigation-item"><a class="navigation-item-link" href="#">Новости</a></li>
+                <li class="navigation-item"><a class="navigation-item-link" href="#">Служба поддержки</a></li>
+                <li class="navigation-item"><a class="navigation-item-link" href="#">Услуги</a></li>
+              </ul>
+            </div>
+            <div class="about-us">
+              <h3>О нас</h3>
+              <ul class="about-us-items">
+                <li class="about-us-item"><a class="about-us-item-link" href="#">О сервисе</a></li>
+                <li class="about-us-item"><a class="about-us-item-link" href="#">Наша команда</a></li>
+                <li class="about-us-item"><a class="about-us-item-link" href="#">Вакансии</a></li>
+                <li class="about-us-item"><a class="about-us-item-link" href="#">Инвесторы</a></li>
+              </ul>
+            </div>
+            <div class="support-service">
+              <h3>Служба поддержки</h3>
+              <ul class="support-service-items">
+                <li class="support-service-item"><a class="support-service-item-link" href="#">Соглашения</a></li>
+                <li class="support-service-item"><a class="support-service-item-link" href="#">Сообщества</a></li>
+                <li class="support-service-item"><a class="support-service-item-link" href="#">Связь с нами</a></li>
+              </ul>
+            </div>
+            <div class="subscription">
+              <h3>Подписка</h3>
+              <p class="subscription-text">Получайте специальные предложения и новости сервиса</p>
+                    <label class="input-with-arrow">
+                      <div class="input-with-arrow-area">
+                        <input class="input-with-arrow-input" type="text" name="subscription" id="subscription-id" placeholder="Email"/>
+                        <button class="input-with-arrow-button" type="submit"> <i class="material-icons arrow-forward-icon gradient-color-text">&#xe5c8;</i></button>
+                      </div>
+                    </label>
+            </div>
+          </div>
+        </div>
+        <hr class="page-divider"/>
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="footer-copyright__text-area">
+              <p class="footer-copyright__text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            </div>
+            <div class="footer-copyright__social-media"><a class="footer-copyright__social-media-link" href="#"><i class="social-icons fa fa-twitter gradient-color-text"></i></a><a class="footer-copyright__social-media-link" href="#"><i class="social-icons fa fa-facebook-square gradient-color-text"></i></a><a class="footer-copyright__social-media-link" href="#"><i class="social-icons fa fa-instagram gradient-color-text"></i></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/libs.min.js"></script>
+  </body>
+</html>

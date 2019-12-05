@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>New project</title>
+    <meta name="description" content="Создание адаптивного сайта"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="icon" href="img/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <meta name="theme-color" content="#000"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="page">
+      <div class="main-container">
+            <header class="header">
+              <div class="container">
+                <div class="header__content"><a class="header__logo" href="index.html"><img class="header__logo-img" src="../img/Logo.png" alt="logo"/></a>
+                  <div class="header-menu"><a class="toggle-mnu" href="#mobile-menu"><span></span><i></i></a>
+                    <ul class="header-menu__items sf-menu">
+                      <li class="header-menu__item"><a class="header-menu__item-link" href="#">О нас</a></li>
+                      <li class="header-menu__item"><a class="header-menu__item-link" href="#">Услуги<i class="material-icons expand-more-icon">&#xe5cf;</i></a>
+                        <ul class="services__menu-items">
+                          <li class="services__menu-item"><a class="services__menu-item-link" href="#">Услуга1</a></li>
+                          <li class="services__menu-item"><a class="services__menu-item-link" href="#">Услуга2<i class="material-icons expand-more-icon">&#xe5cf;</i></a>
+                            <ul class="service2__menu-items">
+                              <li class="service2__menu-item"><a class="services__menu-item-link" href="#">Подслуга2</a></li>
+                              <li class="service2__menu-item"><a class="services__menu-item-link" href="#">Подслуга2</a></li>
+                            </ul>
+                          </li>
+                          <li class="services__menu-item"><a class="services__menu-item-link" href="#">Услуга с очень длинным названием</a></li>
+                        </ul>
+                      </li>
+                      <li class="header-menu__item"><a class="header-menu__item-link" href="#">Вакансии</a></li>
+                      <li class="header-menu__item"><a class="header-menu__item-link" href="#">Новости</a></li>
+                      <li class="header-menu__item"><a class="header-menu__item-link" href="#">Соглашения<i class="material-icons expand-more-icon">&#xe5cf;</i></a>
+                        <ul class="agreements__menu-items">
+                          <li class="agreements__menu-item"><a class="agreements__menu-item-link" href="#">Соглашение1</a></li>
+                          <li class="agreements__menu-item"><a class="agreements__menu-item-link" href="#">Соглашение2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><a class="button  transparent-button" href="sign_in.html"><span> Войти </span> </a><a class="button  purpule-button" href="registration.html">Зарегистрироваться </a>
+                </div>
+              </div>
+            </header>
+        <div class="room-details-section">
+              <div class="room-gallery"><a class="room-gallery__room-big-img-link" href="../../../img/gallery_img1.png" data-fancybox="images">
+                  <div class="room-gallery__room-big-img" style="background-image:url(../img/gallery_img1.png);"></div></a>
+                <div class="room-gallery__room-little-imgs"><a class="room-gallery__room-little-img-link" href="../../../img/gallery_img2.png" data-fancybox="images">
+                    <div class="room-gallery__room-little-img" style="background-image:url(../img/gallery_img2.png);"></div></a><a class="room-gallery__room-little-img-link" href="../../../img/gallery_img3.png" data-fancybox="images">
+                    <div class="room-gallery__room-little-img" style="background-image:url(../img/gallery_img3.png);"></div></a></div>
+              </div>
+          <div class="container">
+            <div class="room-details-section__content">
+              <div class="room-details-section__room-information">
+                <div class="room-details-section__qualities-area">
+                  <div class="room-details-section__qualities">
+                    <div class="room-details-section__benefits">
+                      <h2>Сведения о номере</h2>
+                          <div class="benefits">
+                            <div class="benefit"><i class="material-icons  face-icons gradient-color-text">&#xe24e;</i>
+                              <div class="benefit_info">
+                                <div class="benefit_title">Комфорт</div>
+                                <p>Шумопоглощающие стены</p>
+                              </div>
+                            </div>
+                            <div class="benefit"><i class="material-icons  house-icons gradient-color-text">&#xe7f1;</i>
+                              <div class="benefit_info">
+                                <div class="benefit_title">Удобство</div>
+                                <p>Окно в каждой из спален</p>
+                              </div>
+                            </div>
+                            <div class="benefit"><i class="material-icons  fier-icons gradient-color-text">&#xe80e;</i>
+                              <div class="benefit_info">
+                                <div class="benefit_title">Уют</div>
+                                <p>Номер оснащен камином</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="room-details-section__impressions">
+                      <h2>Впечатления от номера</h2>
+                      <div class="impressions-donut-diagram">
+                        <div class="chart_wrap">
+                          <div id="chart"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      <form class="room-bill-form" id="room-bill">
+                            <div class="room-number-price">
+                              <div class="room-number-price__number">№ <span class="room-number-price__room-number">888</span><span class="room-number-price__number-lux">Люкс</span></div>
+                              <div class="room-number-price__price"><span class="room-number-price__room-price">9 990₽</span> в сутки</div>
+                            </div>
+                            <div class="datepicker-section">
+                              <div class="datepicker-section__item">
+                                <label class="datepicker-section__label" for="startDate">Прибытие</label>
+                                <input class="datepicker-section__field my-datepicker" type="text" id="startDate" placeholder="дд.мм.гггг"/>
+                              </div>
+                              <div class="datepicker-section__item">
+                                <label class="datepicker-section__label" for="endDate">Выезд</label>
+                                <input class="datepicker-section__field fake-dadapicker" type="text" id="endDate" placeholder="дд.мм.гггг"/>
+                              </div>
+                            </div>
+                        <h3>Гости</h3>
+                            <div class="dropdown-list dropdown-list_guests-amount guests-amount" id="guests-list">
+                              <div class="dropdown-list__text-area"><span class="guests-amount_default-text">Сколько гостей </span><i class="material-icons expand-more-icon">&#xe5cf;</i></div>
+                              <div class="dropdown-list__results">
+                                <ul class="dropdown-list__items">
+                                  <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Взрослые</span>
+                                    <div class="counter">
+                                      <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                      <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="adults"/>
+                                      <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Дети</span>
+                                    <div class="counter">
+                                      <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                      <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="kids"/>
+                                      <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Младенцы</span>
+                                    <div class="counter">
+                                      <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                      <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="babies"/>
+                                      <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-list__buttons" value="apply" id="select-apply-id"> 
+                                    <div class="results-clrear-button-wrap"><a class="button  link-gray-button results-clear-button" href="#">Очистить </a>
+                                    </div><a class="results-apply-button button link-purple-button" href="#" id="results-apply-button-id">Применить</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                        <div class="room-bill-form__period-price">
+                          <div class="room-bill-form__period">9 990₽ x <span>4</span> суток</div>
+                          <div class="room-bill-form__price"><span>39&nbsp;960</span>₽</div>
+                        </div>
+                        <div class="room-bill-form__service-charge">
+                          <div class="room-bill-form__service-charge-text-area">
+                            <div class="room-bill-form__service-charge-text">Сбор за услуги: скидка 2&nbsp;179₽</div>
+                            <div class="room-bill-form__service-charge-info">i</div>
+                          </div>
+                          <div class="room-bill-form__service-charge-price">0₽</div>
+                        </div>
+                        <div class="room-bill-form__additional-service">
+                          <div class="room-bill-form__additional-service-text-area">
+                            <div class="room-bill-form__additional-service-text">Сбор за дополнительные услуги</div>
+                            <div class="room-bill-form__additional-service-info">i</div>
+                          </div>
+                          <div class="room-bill-form__sadditional-service-price">300₽</div>
+                        </div>
+                        <div class="room-bill-form__total-price">
+                          <div class="room-bill-form__total-price-text-area">Итого</div>
+                          <div class="room-bill-form__ellipsis"></div>
+                          <div class="room-bill-form__total-price-price">38&nbsp;081₽</div>
+                        </div>
+                            <button class="button  purpule-button long-button" type="submit">Забронировать <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                            </button>
+                      </form>
+                </div>
+                <div class="room-details-section__comments">
+                  <h2>Отзывы посетителей номера</h2>
+                      <div class="comments">
+                        <div class="comment">
+                          <div class="comment_media">
+                            <div class="comment_img-wrap"><img class="comment_img img-responsive" src="../../img/comment_foto_1.jpg" alt="foto"/></div>
+                                <div class="like-button">
+                                  <input class="hidden hidden-like" type="checkbox" id="like-comment1-id" checked="checked"/>
+                                  <label class="like-label" for="like-comment1-id">
+                                    <div class="visible-like"><i class="material-icons empty-hard-icons">&#xe87e;</i><i class="material-icons hard-icons">&#xe87d;</i><span></span></div>
+                                  </label>
+                                </div>
+                          </div>
+                          <div class="comment_text">
+                            <div class="text-title"> Мурад Сарафанов</div>
+                            <p class="comment_text-date">5 дней назад</p>
+                            <p>Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <div class="comment_media">
+                            <div class="comment_img-wrap"><img class="comment_img img-responsive" src="../../img/comment_foto_2.jpg" alt="foto"/></div>
+                                <div class="like-button">
+                                  <input class="hidden hidden-like" type="checkbox" id="like-comment2-id"/>
+                                  <label class="like-label" for="like-comment2-id">
+                                    <div class="visible-like"><i class="material-icons empty-hard-icons">&#xe87e;</i><i class="material-icons hard-icons">&#xe87d;</i><span></span></div>
+                                  </label>
+                                </div>
+                          </div>
+                          <div class="comment_text">
+                            <div class="text-title"> Патрисия Стёклышкова</div>
+                            <p class="comment_text-date">Неделю назад</p>
+                            <p>Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент .</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="room-details-section__regulations">
+                  <div class="room-details-section__rules">
+                    <h2>Правила</h2>
+                        <div class="bullet-list">
+                          <ul class="bullet-list_items">
+                            <li class="bullet-list_item">Нельзя с питомцами</li>
+                            <li class="bullet-list_item">Без вечеринок и мероприятий</li>
+                            <li class="bullet-list_item">Время прибытия &mdash; после 13:00, а выезд до 12:00</li>
+                          </ul>
+                        </div>
+                  </div>
+                  <div class="room-details-section__cancellation">
+                    <h2>Отмена</h2>
+                    <p>Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="room-details-section__room-bill">
+                    <form class="room-bill-form" id="room-bill">
+                          <div class="room-number-price">
+                            <div class="room-number-price__number">№ <span class="room-number-price__room-number">888</span><span class="room-number-price__number-lux">Люкс</span></div>
+                            <div class="room-number-price__price"><span class="room-number-price__room-price">9 990₽</span> в сутки</div>
+                          </div>
+                          <div class="datepicker-section">
+                            <div class="datepicker-section__item">
+                              <label class="datepicker-section__label" for="startDate">Прибытие</label>
+                              <input class="datepicker-section__field my-datepicker" type="text" id="startDate" placeholder="дд.мм.гггг"/>
+                            </div>
+                            <div class="datepicker-section__item">
+                              <label class="datepicker-section__label" for="endDate">Выезд</label>
+                              <input class="datepicker-section__field fake-dadapicker" type="text" id="endDate" placeholder="дд.мм.гггг"/>
+                            </div>
+                          </div>
+                      <h3>Гости</h3>
+                          <div class="dropdown-list dropdown-list_guests-amount guests-amount" id="guests-list">
+                            <div class="dropdown-list__text-area"><span class="guests-amount_default-text">Сколько гостей </span><i class="material-icons expand-more-icon">&#xe5cf;</i></div>
+                            <div class="dropdown-list__results">
+                              <ul class="dropdown-list__items">
+                                <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Взрослые</span>
+                                  <div class="counter">
+                                    <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                    <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="adults"/>
+                                    <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                                  </div>
+                                </li>
+                                <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Дети</span>
+                                  <div class="counter">
+                                    <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                    <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="kids"/>
+                                    <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                                  </div>
+                                </li>
+                                <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Младенцы</span>
+                                  <div class="counter">
+                                    <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                    <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="babies"/>
+                                    <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                                  </div>
+                                </li>
+                                <li class="dropdown-list__buttons" value="apply" id="select-apply-id"> 
+                                  <div class="results-clrear-button-wrap"><a class="button  link-gray-button results-clear-button" href="#">Очистить </a>
+                                  </div><a class="results-apply-button button link-purple-button" href="#" id="results-apply-button-id">Применить</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                      <div class="room-bill-form__period-price">
+                        <div class="room-bill-form__period">9 990₽ x <span>4</span> суток</div>
+                        <div class="room-bill-form__price"><span>39&nbsp;960</span>₽</div>
+                      </div>
+                      <div class="room-bill-form__service-charge">
+                        <div class="room-bill-form__service-charge-text-area">
+                          <div class="room-bill-form__service-charge-text">Сбор за услуги: скидка 2&nbsp;179₽</div>
+                          <div class="room-bill-form__service-charge-info">i</div>
+                        </div>
+                        <div class="room-bill-form__service-charge-price">0₽</div>
+                      </div>
+                      <div class="room-bill-form__additional-service">
+                        <div class="room-bill-form__additional-service-text-area">
+                          <div class="room-bill-form__additional-service-text">Сбор за дополнительные услуги</div>
+                          <div class="room-bill-form__additional-service-info">i</div>
+                        </div>
+                        <div class="room-bill-form__sadditional-service-price">300₽</div>
+                      </div>
+                      <div class="room-bill-form__total-price">
+                        <div class="room-bill-form__total-price-text-area">Итого</div>
+                        <div class="room-bill-form__ellipsis"></div>
+                        <div class="room-bill-form__total-price-price">38&nbsp;081₽</div>
+                      </div>
+                          <button class="button  purpule-button long-button" type="submit">Забронировать <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                          </button>
+                    </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-content">
+              <div class="company-info">
+                <div class="company-info__logo"><img class="company-info__logo-img" src="../img/Logo.png" alt="logo"/></div>
+                <p class="company-info__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+              <div class="navigation">
+                <h3>Навигация</h3>
+                <ul class="navigation-items">
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">О нас</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Новости</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Служба поддержки</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Услуги</a></li>
+                </ul>
+              </div>
+              <div class="about-us">
+                <h3>О нас</h3>
+                <ul class="about-us-items">
+                  <li class="about-us-item"><a class="about-us-item-link" href="#">О сервисе</a></li>
+                  <li class="about-us-item"><a class="about-us-item-link" href="#">Наша команда</a></li>
+                  <li class="about-us-item"><a class="about-us-item-link" href="#">Вакансии</a></li>
+                  <li class="about-us-item"><a class="about-us-item-link" href="#">Инвесторы</a></li>
+                </ul>
+              </div>
+              <div class="support-service">
+                <h3>Служба поддержки</h3>
+                <ul class="support-service-items">
+                  <li class="support-service-item"><a class="support-service-item-link" href="#">Соглашения</a></li>
+                  <li class="support-service-item"><a class="support-service-item-link" href="#">Сообщества</a></li>
+                  <li class="support-service-item"><a class="support-service-item-link" href="#">Связь с нами</a></li>
+                </ul>
+              </div>
+              <div class="subscription">
+                <h3>Подписка</h3>
+                <p class="subscription-text">Получайте специальные предложения и новости сервиса</p>
+                        <label class="input-with-arrow">
+                          <div class="input-with-arrow-area">
+                            <input class="input-with-arrow-input" type="text" name="subscription" id="subscription-id" placeholder="Email"/>
+                            <button class="input-with-arrow-button" type="submit"> <i class="material-icons arrow-forward-icon gradient-color-text">&#xe5c8;</i></button>
+                          </div>
+                        </label>
+              </div>
+            </div>
+          </div>
+          <hr class="page-divider"/>
+          <div class="container">
+            <div class="footer-copyright">
+              <div class="footer-copyright__text-area">
+                <p class="footer-copyright__text">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+              </div>
+              <div class="footer-copyright__social-media"><a class="footer-copyright__social-media-link" href="#"><i class="social-icons fa fa-twitter gradient-color-text"></i></a><a class="footer-copyright__social-media-link" href="#"><i class="social-icons fa fa-facebook-square gradient-color-text"></i></a><a class="footer-copyright__social-media-link" href="#"><i class="social-icons fa fa-instagram gradient-color-text"></i></a></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+  </body>
+</html>

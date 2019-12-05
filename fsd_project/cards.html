@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>New project</title>
+    <meta name="description" content="Создание адаптивного сайта"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="icon" href="img/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <meta name="theme-color" content="#000"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="cards-container">
+      <div class="cards-container-first-column">
+        <form class="search-rooms-form" id="search">
+          <h1>Найдём номера под ваши пожелания</h1>
+                  <div class="datepicker-section">
+                    <div class="datepicker-section__item">
+                      <label class="datepicker-section__label" for="startDate">Прибытие</label>
+                      <input class="datepicker-section__field my-datepicker" type="text" id="startDate" placeholder="дд.мм.гггг"/>
+                    </div>
+                    <div class="datepicker-section__item">
+                      <label class="datepicker-section__label" for="endDate">Выезд</label>
+                      <input class="datepicker-section__field fake-dadapicker" type="text" id="endDate" placeholder="дд.мм.гггг"/>
+                    </div>
+                  </div>
+          <h3>Гости</h3>
+                  <div class="dropdown-list dropdown-list_guests-amount guests-amount" id="guests-list">
+                    <div class="dropdown-list__text-area"><span class="guests-amount_default-text">Сколько гостей </span><i class="material-icons expand-more-icon">&#xe5cf;</i></div>
+                    <div class="dropdown-list__results">
+                      <ul class="dropdown-list__items">
+                        <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Взрослые</span>
+                          <div class="counter">
+                            <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                            <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="adults"/>
+                            <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                          </div>
+                        </li>
+                        <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Дети</span>
+                          <div class="counter">
+                            <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                            <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="kids"/>
+                            <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                          </div>
+                        </li>
+                        <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Младенцы</span>
+                          <div class="counter">
+                            <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                            <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="babies"/>
+                            <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                          </div>
+                        </li>
+                        <li class="dropdown-list__buttons" value="apply" id="select-apply-id"> 
+                          <div class="results-clrear-button-wrap"><a class="button  link-gray-button results-clear-button" href="#">Очистить </a>
+                          </div><a class="results-apply-button button link-purple-button" href="#" id="results-apply-button-id">Применить</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="button  purpule-button long-button" type="submit">Подобрать номер <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                  </button>
+        </form>
+        <form class="accaunt-registration-form" id="registration">
+          <h1>Регистрация аккаунта</h1>
+                  <label class="input-text">
+                    <input class="input-field" type="text" name="name" placeholder="Имя" id="name-id"/>
+                  </label>
+                  <label class="input-text">
+                    <input class="input-field" type="text" name="family-name" placeholder="Фамилия" id="family-name-id"/>
+                  </label>
+                  <div class="radio-button">
+                    <input class="hidden hidden-radio" type="radio" id="male-id" value="male" name="sex" checked="checked"/>
+                    <label class="radio-label" for="male-id">
+                      <div class="visible-radio">
+                        <div class="radio-round"></div>
+                      </div><span>Мужчина</span>
+                    </label>
+                    <input class="hidden hidden-radio" type="radio" id="female-id" value="female" name="sex"/>
+                    <label class="radio-label" for="female-id">
+                      <div class="visible-radio">
+                        <div class="radio-round"></div>
+                      </div><span>Женщина</span>
+                    </label>
+                  </div>
+                  <label class="input-text">Дата рождения
+                    <input class="input-field" type="text" name="birthday" placeholder="дд.мм.гггг" id="birthday-id"/>
+                  </label>
+                  <label class="input-text">Данные для входа в сервис
+                    <input class="input-field" type="text" name="email" placeholder="Email" id="email-id"/>
+                  </label>
+                  <label class="input-text">
+                    <input class="input-field" type="text" name="password" placeholder="Пароль" id="password-id"/>
+                  </label>
+                  <div class="toggle-button">
+                    <input class="hidden hidden-toggle" type="checkbox" id="recive-suggestion-id" name="recive-suggestion"/>
+                    <label class="toggle-label" for="recive-suggestion-id">
+                      <div class="visible-toggle">
+                        <div class="toggle-round"></div>
+                      </div><span>Получать спецпредложения</span>
+                    </label>
+                  </div>
+                  <button class="button  purpule-button long-button" type="submit">Перейти к оплате <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                  </button>
+                  <div class="account-existance"><span class="account-existance_text">Уже есть аккаунт на Toxin</span><a class="button  transparent-button" href="sign_in.html"><span> Войти </span> </a>
+                  </div>
+        </form>
+      </div>
+      <div class="cards-container-second-column">
+            <form class="room-bill-form" id="room-bill">
+                  <div class="room-number-price">
+                    <div class="room-number-price__number">№ <span class="room-number-price__room-number">888</span><span class="room-number-price__number-lux">Люкс</span></div>
+                    <div class="room-number-price__price"><span class="room-number-price__room-price">9 990₽</span> в сутки</div>
+                  </div>
+                      <div class="datepicker-section">
+                        <div class="datepicker-section__item">
+                          <label class="datepicker-section__label" for="startDate">Прибытие</label>
+                          <input class="datepicker-section__field my-datepicker" type="text" id="startDate" placeholder="дд.мм.гггг"/>
+                        </div>
+                        <div class="datepicker-section__item">
+                          <label class="datepicker-section__label" for="endDate">Выезд</label>
+                          <input class="datepicker-section__field fake-dadapicker" type="text" id="endDate" placeholder="дд.мм.гггг"/>
+                        </div>
+                      </div>
+              <h3>Гости</h3>
+                      <div class="dropdown-list dropdown-list_guests-amount guests-amount" id="guests-list">
+                        <div class="dropdown-list__text-area"><span class="guests-amount_default-text">Сколько гостей </span><i class="material-icons expand-more-icon">&#xe5cf;</i></div>
+                        <div class="dropdown-list__results">
+                          <ul class="dropdown-list__items">
+                            <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Взрослые</span>
+                              <div class="counter">
+                                <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="adults"/>
+                                <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                              </div>
+                            </li>
+                            <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Дети</span>
+                              <div class="counter">
+                                <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="kids"/>
+                                <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                              </div>
+                            </li>
+                            <li class="dropdown-list__item"><span class="dropdown-list__item-text guests-amount_item-text">Младенцы</span>
+                              <div class="counter">
+                                <button class="counter__buton counter__buton_dec" type="button"> <span>-</span></button>
+                                <input class="counter__field could-be-clean" type="text" value="0" data-min="0" data-max="20" id="babies"/>
+                                <button class="counter__buton counter__buton_inc" type="button"> <span>+</span></button>
+                              </div>
+                            </li>
+                            <li class="dropdown-list__buttons" value="apply" id="select-apply-id"> 
+                              <div class="results-clrear-button-wrap"><a class="button  link-gray-button results-clear-button" href="#">Очистить </a>
+                              </div><a class="results-apply-button button link-purple-button" href="#" id="results-apply-button-id">Применить</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+              <div class="room-bill-form__period-price">
+                <div class="room-bill-form__period">9 990₽ x <span>4</span> суток</div>
+                <div class="room-bill-form__price"><span>39&nbsp;960</span>₽</div>
+              </div>
+              <div class="room-bill-form__service-charge">
+                <div class="room-bill-form__service-charge-text-area">
+                  <div class="room-bill-form__service-charge-text">Сбор за услуги: скидка 2&nbsp;179₽</div>
+                  <div class="room-bill-form__service-charge-info">i</div>
+                </div>
+                <div class="room-bill-form__service-charge-price">0₽</div>
+              </div>
+              <div class="room-bill-form__additional-service">
+                <div class="room-bill-form__additional-service-text-area">
+                  <div class="room-bill-form__additional-service-text">Сбор за дополнительные услуги</div>
+                  <div class="room-bill-form__additional-service-info">i</div>
+                </div>
+                <div class="room-bill-form__sadditional-service-price">300₽</div>
+              </div>
+              <div class="room-bill-form__total-price">
+                <div class="room-bill-form__total-price-text-area">Итого</div>
+                <div class="room-bill-form__ellipsis"></div>
+                <div class="room-bill-form__total-price-price">38&nbsp;081₽</div>
+              </div>
+                      <button class="button  purpule-button long-button" type="submit">Забронировать <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                      </button>
+            </form>
+        <form class="sign-in-form" id="sign-in">
+          <h1>Войти</h1>
+                  <label class="input-text">
+                    <input class="input-field" type="text" name="email" placeholder="Email" id="email-id"/>
+                  </label>
+                  <label class="input-text">
+                    <input class="input-field" type="text" name="password" placeholder="Пароль" id="password-id"/>
+                  </label>
+                  <button class="button  purpule-button long-button" type="submit">Войти <i class="material-icons arrow-forward-icon"> &#xe5c8;</i>
+                  </button>
+                  <div class="account-existance"><span class="account-existance_text">Нет аккаунта на Toxin?</span><a class="button  transparent-button" href="registration.html"><span> Создать </span> </a>
+                  </div>
+        </form>
+      </div>
+      <div class="cards-container-third-column">
+        <div class="datapicker-inline">
+          <div class="datapicker-inline__item">
+            <input class="datapicker-inline__field my-inline-datepicker" type="text" id="startDate" placeholder="дд.мм.гггг"/>
+          </div>
+        </div>
+            <div class="room-short-description">
+              <div class="room-short-description__img-carousel">
+                <div class="room-short-description__img-area owl-carousel">
+                  <div class="room-short-description__img" style="background-image: url(../img/image1.png)"></div>
+                  <div class="room-short-description__img" style="background-image: url(../img/image2.png)"></div>
+                  <div class="room-short-description__img" style="background-image: url(../img/image1.png)"></div>
+                  <div class="room-short-description__img" style="background-image: url(../img/image2.png)"></div>
+                </div><i class="material-icons expand-more-icon slider-button-prev">&#xe5cf;</i><i class="material-icons expand-more-icon slider-button-next">&#xe5cf;</i>
+              </div>
+              <div class="room-short-description__info">
+                    <div class="room-number-price">
+                      <div class="room-number-price__number">№ <span class="room-number-price__room-number">888</span><span class="room-number-price__number-lux">Люкс</span></div>
+                      <div class="room-number-price__price"><span class="room-number-price__room-price">9 990₽</span> в сутки</div>
+                    </div>
+                <div class="room-short-description__feedback">
+                      <div class="rate-star-pic">
+                        <div><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i>
+                        </div>
+                      </div>
+                  <div class="room-short-description__feedback-amount"><span>145</span> Отзывов</div>
+                </div>
+              </div>
+            </div>
+            <div class="room-short-description">
+              <div class="room-short-description__img-carousel room-short-description__simple-img-carousel">
+                <div class="room-short-description__img-area owl-carousel">
+                  <div class="room-short-description__img" style="background-image: url(../img/image2.png)"></div>
+                  <div class="room-short-description__img" style="background-image: url(../img/image1.png)"></div>
+                  <div class="room-short-description__img" style="background-image: url(../img/image2.png)"></div>
+                  <div class="room-short-description__img" style="background-image: url(../img/image1.png)"></div>
+                </div><i class="material-icons expand-more-icon slider-button-prev">&#xe5cf;</i><i class="material-icons expand-more-icon slider-button-next">&#xe5cf;</i>
+              </div>
+              <div class="room-short-description__info">
+                    <div class="room-number-price">
+                      <div class="room-number-price__number">№ <span class="room-number-price__room-number">840</span><span class="room-number-price__number-lux"></span></div>
+                      <div class="room-number-price__price"><span class="room-number-price__room-price">9 900₽</span> в сутки</div>
+                    </div>
+                <div class="room-short-description__feedback">
+                      <div class="rate-star-pic">
+                        <div><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons star-icons gradient-color-text">&#xe838;</i><i class="material-icons empty-star-icons gradient-color-text">&#xe83a;</i>
+                        </div>
+                      </div>
+                  <div class="room-short-description__feedback-amount"><span>65</span> Отзывов</div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+  </body>
+</html>
